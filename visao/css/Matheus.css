@@ -1,0 +1,111 @@
+.bg-pw {
+    background: url("../imagens/img\ Mercado2.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.font {
+    font-family: cursive;
+    text-size-adjust: 250px;
+}
+
+#orange {
+    color: #ea133f;
+}
+
+.orange {
+    color: #ea133f;
+}
+
+body {
+    background-image: url("");
+    background-color: #cccccc;
+}
+
+.bg-orange {
+    background-color: #fd7e14;
+}
+
+.bg-prod {
+    background-color: #000000;
+}
+
+.bg-product {
+    background: url("../imagens/bg-produtos(certo).jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 444px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* margin-top: 50px; */
+}
+
+.bg-menu-index {
+    background-color: #000000;
+}
+
+.bg-item-nav {
+    background-color: #9400D3;
+}
+
+.input-login {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: #dbdbdb 2px 2px 3px 0px inset;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.input-login:hover {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 15px 1px #fd7e14;
+    -moz-box-shadow: 0px 0px 15px 1px #fd7e14;
+    box-shadow: 0px 0px 5px 0px #fd7e14;
+    border: 1px solid #fd7e14;
+    outline: none;
+}
+
+.text-prod {
+    color: #F0FFFF;
+}
+
+ul.dropdown-i {
+    left: 200px;
+    /* defina N, conforme sua necessidade, para deslocar o submenu na horizontal */
+}
+
+.marelo {
+    color: #DAA520;
+}
+
+.mb-1 {
+    margin-bottom: -20px;
+}
+
+.bg-index {
+    background-color: #F4A460;
+}
+
+.black {
+    color: #000000;
+}
+
+.btn-colorido {
+    color: #F4A460;
+}
+
+
+/* .color-prod {
+    color: #F4A460;
+} */
+
+
+/* .btn-pele {
+    background-color: #F4A460;
+} */

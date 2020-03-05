@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Layout do Mercado</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Matheus.css">
+    <link rel="stylesheet" href="libs/MaterialDesign/css/materialdesignicons.css">
+    <link rel="stylesheet" href="libs/sweetalert2/package/dist/sweetalert2.css">
+
+</head>
+
+<body class="bg-index">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-menu-index">
+        <a class="navbar-brand text-primary img"><img src="imagens/cu.png" width="80px" height="80px" class="img-fluid"></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a id="orange" class="nav-link text-center ml-5" href="TLprod.html"><i class="mdi mdi-shopping mdi-36px"></i><p> Produtos</p></a>
+                </li>
+                <li class="nav-item">
+                    <a id="orange" class="nav-link text-center ml-5" href="#"><i class="mdi mdi-account-group mdi-36px"></i><p>Fornecedores</p></a>
+                </li>
+                <li class="nav-item">
+                    <a id="orange" class="nav-link text-center ml-5 atendimento-index" href="#"><i class="mdi mdi-face-agent mdi-36px"></i><p>Atendimento</p></a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <button id="my-dropdown" class="btn btn-light dropdown-toggle orange " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mais</button>
+                <div class="dropdown-menu" aria-labelledby="my-dropdown">
+                    <a id="orange" class="dropdown-item active bg-light text-center atendimentos" href="#"><i class="mdi mdi-timetable mdi-24px"><p class="text-center">Horários</p></i></a>
+
+                    <a id="orange" class="dropdown-item active bg-light text-center" href="#"><i class="mdi mdi-square-inc-cash mdi-24px text-center"><p class="text-center">Promoções</p></i></a>
+
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle orange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Login
+                                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a id="orange" class="dropdown-item active bg-light text-center" href="telainicial.html"><i class="mdi mdi-exit-to-app mdi-24px"><p>Sair</p></i></a>
+                        <a id="orange" class="dropdown-item active bg-light text-center" href="#"><i class="mdi mdi-account-check-outline mdi-24px"><p> Ver perfil</p></i></a>
+                        <a id="orange" class="dropdown-item active bg-light text-center" href="cadastro_coo.html"><i class="mdi mdi-account-convert mdi-24px"><p>Atualizar Cadastro</p></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-pw text-center">
+        <h1 class="display-4 text-dark text-center black"><strong>Bem vindo ao mercado Mapé</strong></h1><br>
+        <form action="">
+            <div class="form-group row">
+                <div class="offset-md-4 col-12 col-md-4">
+                    <label for=""></label>
+                    <input type="text" name="" placeholder="Digite o produto que deseja..." class="form-control input-login text-dark" id="">
+                </div>
+                <button id="btn-pesquisa" class="mt-3  btn orange text-center btn-dark"><i class="mdi mdi-search-web mdi-24px"></i></button>
+            </div>
+        </form>
+    </div>
+    <div id="img" class="row">
+        <div class="col-md-12 col-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="imagens/img Mercado1.jpg" height="560px" width="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="imagens/jumbotron.jpg" height="560px" width="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="imagens/frios.jpg" height="560px" width="100%">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr><br>
+    <div class="row">
+        <div class="col-md-12 col-12 text-center">
+            <h3>Desenvolvedores</h3>
+        </div><br><br><br>
+        <div class="col-md-4 col-4 text-center">
+            <h5 class="text-center">Matheus Henrique da Gama Pereira</h5><br>
+            <img src="imagens/face theus.jpg" height="250" width="250">
+
+            <!-- <p>Celular</p>
+
+            <p>014 99847-3460</p> -->
+        </div><br><br><br>
+        <div class="col-md-4 col-4 text-center">
+            <h5 class="text-center">Pedro Ernesto Tavares Gonçalves</h5><br>
+
+            <img src="imagens/face pedro.jpg" height="250" width="250">
+
+
+        </div><br><br><br>
+        <div class="col-md-4 col-4 text-center">
+            <h5 class="text-center">Giovanna Rodrigeus Bandeira</h5><br>
+
+            <img src="imagens/face giovanna.jpg" height="250" width="250">
+
+
+        </div>
+    </div><br><br>
+
+    <div class="row">
+
+        <div class="col-md-2 col-2 text-center">
+            <h4 class=""><a href="https://www.facebook.com/profile.php?id=100028307790482" target="blank" class="btn "><i class="black mdi mdi-facebook-box mdi-36px"></i></a></h4>
+
+
+            <p>Matheus pereira</p>
+        </div>
+
+        <div class="col-md-2 col-2 text-center">
+            <h4>
+                <a href="" class="btn"><i class="black mdi mdi-contact-phone mdi-36px" >
+                </i></a>
+            </h4>
+
+
+            <p>(014) 99847-3460</p>
+
+            <!-- <h4>014 99140-7979</h4> -->
+        </div>
+
+        <div class="col-md-2 col-2 text-center">
+
+            <h4><a href="https://www.facebook.com/pedro.tavares.169405/timeline?lst=100028307790482%3A100004088353846%3A1581800861" class="btn" target="blank"><i class="black mdi mdi-facebook-box mdi-36px"></a></i>
+                </i>
+            </h4>
+
+            <p>Pedro Tavares</p>
+        </div>
+        <div class="col-md-2 col-2 text-center">
+            <h4>
+                <a href="" class="btn"> <i class="black mdi mdi-contact-phone mdi-36px"></i></a>
+            </h4>
+
+
+            <p>(014) 99140-7979</p>
+        </div>
+        <div class="col-md-2 col-2 text-center">
+
+            <h4><a href="https://www.facebook.com/profile.php?id=100006730716358" class="btn" target="blank"><i class="black mdi mdi-facebook-box mdi-36px"></a></i>
+                </i>
+            </h4>
+
+            <p>Giovanna Rodrigues</p>
+        </div>
+        <div class="col-md-2 col-2 text-center">
+            <h4>
+                <a href="" class="btn"> <i class="black mdi mdi-contact-phone mdi-36px"></i></a>
+            </h4>
+
+
+            <p>(014) 99832-3317</p>
+        </div>
+    </div>
+    <div id="loader" class="container-fluid bg-dark  fixed-top">
+        <div class="row text-center">
+            <div class="col-12 text-center">
+                <img src="imagens/preloader.gif" class="img-loader">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="libs/sweetalert2/package/dist/sweetalert2.js"></script>
+    <script src="js/mercado.js"></script>
+
+</body>
+
+</html>

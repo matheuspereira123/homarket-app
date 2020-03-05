@@ -1,0 +1,19 @@
+.titleP {
+    font-family: 'Noto Sans, sans-serif';
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+}
+
+.bg-img {
+    background: url("../imagens/promocoes.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+}

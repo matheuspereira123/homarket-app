@@ -1,0 +1,8 @@
+.jumbotron-img {
+    background: url("../imagens/atendimento.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+}
