@@ -1,3 +1,31 @@
+/* inicio(EU) */
+
+.mb-certa {
+    margin-top: -95px;
+}
+
+body {
+    background: url("../imagens/bg-login.jpg");
+    background-size: cover;
+}
+
+
+/* .bg-login {
+    background: url("imagens/bg-login");
+    background-size: cover;
+    background-position-y: center;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+} */
+
+
+/* .login100-form-btn a:hover {
+    text-decoration: none;
+    color: #000000;
+} */
+
+
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -58,7 +86,7 @@ a:focus {
 
 a:hover {
     text-decoration: none;
-    color: #a64bf4;
+    color: #EE4000;
 }
 
 
@@ -354,11 +382,11 @@ iframe {
 }
 
 .input100:focus+.focus-input100::after {
-    color: #a64bf4;
+    color: #EE4000;
 }
 
 .has-val.input100+.focus-input100::after {
-    color: #a64bf4;
+    color: #EE4000;
 }
 
 
@@ -396,10 +424,10 @@ iframe {
     width: 300%;
     height: 100%;
     background: #a64bf4;
-    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -webkit-linear-gradient(right, #DAA520, #CD3700, #DAA520, #CD3700);
+    /* background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
     background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff); */
     top: 0;
     left: -100%;
     -webkit-transition: all 0.4s;
