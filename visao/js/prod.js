@@ -65,7 +65,7 @@ $('.cadastrar').click(function() {
 
     <div class="img-fluid">
         <div class="text-center">
-            <img src="imagens/ponto de exclamação.png">
+            <img src="imagens/ponto de exclamação.jpg">
         </div>
     </div>
     <div class="text-center">
@@ -119,7 +119,7 @@ $('.remove').click(function() {
 
     <div class="img-fluid">
         <div class="text-center">
-            <img src="imagens/ponto de exclamação.png">
+            <img src="imagens/ponto de exclamação.jpg">
         </div>
     </div>
     <div class="text-center">
