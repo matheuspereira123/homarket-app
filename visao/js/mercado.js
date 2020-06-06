@@ -104,6 +104,6 @@ $('.atendimento-index').click(function() {
 //     this.placeholder = this.dataset.placeholder;
 // });
 
-// $('.btn-pesquisa').click(function() {
-//     swal.fire('Erro', 'Produto não encontrado', 'danger')
-// })
+$('#btn-pesquisa').click(function() {
+    Swal.fire('Erro', 'Produto não encontrado', 'error')
+})
