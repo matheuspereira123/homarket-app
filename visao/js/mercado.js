@@ -105,5 +105,5 @@ $('.atendimento-index').click(function() {
 // });
 
 $('#btn-pesquisa').click(function() {
-    Swal.fire('Erro', 'Produto não encontrado', 'error')
+    Swal.fire('Erro', 'Digite o produto desejado', 'error')
 })
