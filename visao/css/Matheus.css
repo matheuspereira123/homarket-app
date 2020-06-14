@@ -65,10 +65,10 @@ body {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 15px 1px #fd7e14;
-    -moz-box-shadow: 0px 0px 15px 1px #fd7e14;
-    box-shadow: 0px 0px 5px 0px #fd7e14;
-    border: 1px solid #fd7e14;
+    -webkit-box-shadow: 0px 0px 15px 1px #CD0000;
+    -moz-box-shadow: 0px 0px 15px 1px #CD0000;
+    box-shadow: 0px 0px 5px 0px #CD0000;
+    border: 1px solid #CD0000;
     outline: none;
 }
 
@@ -113,6 +113,24 @@ ul.dropdown-i {
 .btn-marron {
     background-color: #CD853F;
 }
+
+.bg-cinza {
+    background-color: #1C1C1C;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.deep-purple {
+    color: purple;
+}
+
+
+/* .text-branco {
+    color: #D3D3D3;
+    outline: ;
+} */
 
 
 /* 
