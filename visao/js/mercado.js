@@ -8,7 +8,8 @@ $('#produtos').click(function() {
     $('#loader').hide()
 })
 
-$('.atendimento-index').click(function() {
+$('.atendimento-index').click(function(e) {
+    e.preventDefault()
     $('.modal-title').empty()
     $('.modal-body').empty()
 
@@ -104,6 +105,7 @@ $('.atendimento-index').click(function() {
 //     this.placeholder = this.dataset.placeholder;
 // });
 
-$('#btn-pesquisa').click(function() {
+$('#btn-pesquisa').click(function(e) {
+    e.preventDefault()
     Swal.fire('Erro', 'Digite o produto desejado', 'error')
 })
