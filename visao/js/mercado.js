@@ -105,7 +105,14 @@ $('.atendimento-index').click(function(e) {
 //     this.placeholder = this.dataset.placeholder;
 // });
 
+// Quando não estiver nada digitado
 $('#btn-pesquisa').click(function(e) {
-    e.preventDefault()
-    Swal.fire('Erro', 'Digite o produto desejado', 'error')
-})
+        e.preventDefault()
+        Swal.fire('Erro', 'Digite o produto desejado', 'error')
+    })
+    // Quando não tiver o produto no estoque
+
+// $('#btn-pesquisa').click(function(e) {
+//     e.preventDefault()
+//     Swal.fire('Atenção', 'O produto não foi encontrado', 'warning')
+// })
