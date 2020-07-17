@@ -102,16 +102,8 @@ ul.dropdown-i {
     background-color: #000000;
 } */
 
-.btn-colorido {
-    color: #F4A460;
-}
-
 .aviso-prod {
     color: #FF8C00;
-}
-
-.btn-marron {
-    background-color: #CD853F;
 }
 
 .bg-cinza {
@@ -122,6 +114,32 @@ ul.dropdown-i {
     background-color: #000000;
 }
 
-.deep-purple {
-    color: purple;
+.efeito {
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito-btn {
+    background-color: white;
+}
+
+.efeito-btn:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 3px;
+    width: 0px;
+    background: rgba(153, 50, 205, 1.5);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.efeito-btn:hover:before {
+    width: 100%;
 }
