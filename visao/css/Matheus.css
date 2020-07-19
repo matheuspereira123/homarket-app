@@ -1,3 +1,21 @@
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
 .bg-pw {
     background: url("../imagens/img\ Mercado2.jpg");
     background-size: cover;
@@ -135,11 +153,15 @@ ul.dropdown-i {
     left: 0px;
     height: 3px;
     width: 0px;
-    background: rgba(153, 50, 205, 1.5);
+    background: rgba(105, 89, 205, 1.5);
     border-radius: 10px;
     transition: all 2s ease;
 }
 
 .efeito-btn:hover:before {
     width: 100%;
+}
+
+.efeito-search:hover {
+    animation: bounce 1s;
 }

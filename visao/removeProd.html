@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="libs/MaterialDesign/css/materialdesignicons.css">
     <link rel="stylesheet" href="libs/sweetalert2/package/dist/sweetalert2.css">
     <link rel="stylesheet" href="css/addProd.css">
+    <link rel="stylesheet" href="css/lote.css">
 </head>
 
 <body class="bg-add">
@@ -18,53 +19,35 @@
             <br><br>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br>
     <div class="conteiner-fluid bg-table">
         <div class="col-12 col-md-5 mx-auto shadow-lg p-3 mb-5 bg-white rounded text-center">
             <!-- <div class="row text-center mx-auto"> -->
-            <p class="black"><i class="mdi mdi-account-card-details mdi-48px"></i></p>
+            <p class="black"><i class="mdi mdi-clipboard-text mdi-48px"></i></p>
+
             <form>
                 <div class="form-row text-center ">
 
                     <div class="form-group col-md-6 col-6 text-center ">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control input-login" id="inputEmail4" placeholder="Email">
+                        <label for="inputEmail4">Nome</label>
+                        <input type="email" class="form-control input-login" id="inputEmail4" placeholder="Informe o produto removido">
                     </div>
                     <div class="form-group col-md-6 ">
-                        <label for="inputPassword4">Senha</label>
-                        <input type="password" class="form-control input-login" id="inputPassword4" placeholder="*******">
+                        <label for="inputPassword4">Marca</label>
+                        <input type="text" class="form-control input-login" id="inputPassword4" placeholder="Informe a marca do produto">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputAddress">Endereço</label>
-                    <input type="text" class="form-control input-login" id="inputAddress" placeholder="Rua *****, nº 123">
+                    <label for="inputAddress">Numero do lote</label>
+                    <input type="number" class="form-control input-login text-center" id="inputAddress" placeholder="Informe o numero de lote">
                 </div>
                 <div class="form-group ">
-                    <label for="inputAddress2">Telefone</label>
-                    <input type="text" class="form-control input-login" id="inputAddress2" placeholder="(00) 000 000 000">
+                    <label for="inputAddress2">Quantidade</label>
+                    <input type="number" class="form-control input-login text-center" id="inputAddress2" placeholder="Informe quantas unidades serão removidas">
                 </div>
-                <div class="form-row ">
-                    <div class="form-group col-md-4">
-                        <label for="inputCity">RG</label>
-                        <input type="text" class="form-control input-login" placeholder="00.000.000-0" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4 ">
-                        <label for="inputEstado">Gênero</label>
-                        <select id="inputEstado" class="form-control input-login">
-                                <option class="select-add">Escolher...</option>
-                                <option class="select-add">Masculino</option>
-                                <option class="select-add">Feminino</option>
-                                <option class="select-add">Outros</option>
-                                <option class="select-add">Prefiro não dizer</option>
-                                </select>
-                    </div>
-                    <div class="form-group col-md-4 ">
-                        <label for="inputCEP">Nome completo</label>
-                        <input type="text" class="form-control input-login" placeholder="Victor Hugo Oliveira" id="inputCEP">
-                    </div>
-                </div>
+
                 <br>
-                <a href="" class="text-light btn  btn-black">Cadastrar</a>
+                <a href="" class="text-light btn btn-black add-prod">Remover</a>
             </form>
 
         </div>
