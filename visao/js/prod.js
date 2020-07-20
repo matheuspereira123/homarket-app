@@ -165,93 +165,11 @@ $('.remove').click(function() {
     $('#modalBunitinhu').modal('show')
 
 })
-
-// $('#btn').click(function() {
-//     $('#add').removeClass('mdi-cart-plus mdi-36px')
-//     $('#add').addClass('mdi-check mdi-36px')
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('.cadastrar').click(function() {
-
-//     const swalWithBootstrapButtons = Swal.mixin({
-//         customClass: {
-//             confirmButton: 'btn btn-success',
-//             cancelButton: 'btn btn-danger'
-//         },
-//         buttonsStyling: false
-//     })
-
-//     swalWithBootstrapButtons.fire({
-//         title: 'Área Restrita!',
-//         text: "Somente Funcionários",
-//         icon: 'warning',
-//         showCancelButton: true,
-//         confirmButtonText: 'Sou um funcionário',
-//         cancelButtonText: 'Voltar',
-//         reverseButtons: true
-//     }).then((result) => {
-//             if (result.value) {
-//                 swalWithBootstrapButtons.fire(
-//                     'Insira seu nome de usuário',
-//                     input: 'text',
-//                     inputAttributes: {
-//                         autocapitalize: 'off'
-//                     },
-//                     showCancelButton: true,
-//                     confirmButtonText: 'Logar',
-//                     showLoaderOnConfirm: true,
-//                     preConfirm: (login) => {
-//                         return fetch(`//api.github.com/users/${login}`)
-//                             .then(response => {
-//                                 if (!response.ok) {
-//                                     throw new Error(response.statusText)
-//                                 }
-//                                 return response.json()
-//                             })
-//                             .catch(error => {
-//                                 Swal.showValidationMessage(
-//                                     `Request failed: ${error}`
-//                                 )
-//                             })
-//                     },
-//                     allowOutsideClick: () => !Swal.isLoading()
-//                 }).then((result) => {
-//                 if (result.value) {
-//                     Swal.fire({
-//                         title: `${result.value.login}'s avatar`,
-//                         imageUrl: result.value.avatar_url
-//                     })
-//                 }
-//             })
-//         )
-//     }
-//     else if (
-//         /* Read more about handling dismissals below */
-//         result.dismiss === Swal.DismissReason.cancel
-//     ) {
-//         swalWithBootstrapButtons.fire(
-//             'Voltando para a área de produtos',
-//             'Aproveite os nosso produtos)',
-//             'success'
-//         )
-//     }
-// })
-
-
-
-
-// { <p class="text-right"><i class="mdi mdi-check-outline mdi-36px"></i></p> }
+$('#btn-add').click(function(e) {
+    e.preventDefault()
+    Swal.fire('Adicionado!', 'O produto foi adicionado ao estoque', 'success')
+})
+$('#btn-remove').click(function(e) {
+    e.preventDefault()
+    Swal.fire('Removido!', 'O produto foi removido do estoque', 'success')
+})

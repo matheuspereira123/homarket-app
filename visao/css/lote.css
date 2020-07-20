@@ -25,3 +25,11 @@
     animation: bounce 1s;
     color: #ffffff;
 }
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+}
