@@ -165,6 +165,7 @@ $('.remove').click(function() {
     $('#modalBunitinhu').modal('show')
 
 })
+
 $('#btn-add').click(function(e) {
     e.preventDefault()
     Swal.fire('Adicionado!', 'O produto foi adicionado ao estoque', 'success')

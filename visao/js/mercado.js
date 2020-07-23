@@ -8,12 +8,13 @@ $('#produtos').click(function() {
     $('#loader').hide()
 })
 
-$('.atendimento-index').click(function(e) {
-    e.preventDefault()
-    $('.modal-title').empty()
-    $('.modal-body').empty()
 
-    let body = `
+$('.atendimento-index').click(function(e) {
+        e.preventDefault()
+        $('.modal-title').empty()
+        $('.modal-body').empty()
+
+        let body = `
         <div class="row">
         <div class="col-md-6 col-6 text-center">
             <i class="mdi mdi-timetable mdi-36px text-center"></i>
@@ -92,25 +93,147 @@ $('.atendimento-index').click(function(e) {
         </div>
     </div>
         `
-    $('.modal-title').append('Suporte técnico')
-    $('.modal-body').append(body)
-    $('#modalBunitinhu').modal('show')
+        $('.modal-title').append('Suporte técnico')
+        $('.modal-body').append(body)
+        $('#modalBunitinhu').modal('show')
 
-})
-
-// $(':input').on('focus', function() {
-//     this.dataset.placeholder = this.placeholder;
-//     this.placeholder = '';
-// }).on('blur', function() {
-//     this.placeholder = this.dataset.placeholder;
-// });
-
-// Quando não estiver nada digitado
+    })
+    //Arroz
 $('#btn-pesquisa').click(function(e) {
         e.preventDefault()
-        Swal.fire('Erro', 'Digite o produto desejado', 'error')
+        $('.modal-title').empty()
+        $('.modal-body').empty()
+
+        let body = `
+
+    <div class="img-fluid">
+        <div class="text-center">
+            <img src="imagens/arroz.jpg" height="250px" width="250px">
+        </div>
+    </div>
+    <div class="text-center">
+    <h3 class="Text-center text-danger">Arroz Branco camil</h3>
+    <h4 class="text-center text-success">R$4,99</h4>
+    </div><br><br>
+
+
+
+    <div class="row text-center">
+
+            <div class="col-md-4">
+                <a href="" class="btn btn-outline-success btn-sm"><i class="mdi mdi-cart-plus mdi-36px"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="" class="btn btn-outline-info btn-sm"><i class="mdi mdi-information-outline mdi-36px"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="mdi mdi-cart-remove mdi-36px"></i></a>
+            </div>
+    </div>
+    `
+
+        $('.modal-title').append('Produto pesquisado')
+        $('.modal-body').append(body)
+
+        $('#modalBunitinhu').modal('show')
+
     })
-    // Quando não tiver o produto no estoque
+    //Feijão
+    // $('#btn-pesquisa').click(function(e) {
+    //         e.preventDefault()
+    //         $('.modal-title').empty()
+    //         $('.modal-body').empty()
+
+//         let body = `
+
+//     <div class="img-fluid">
+//         <div class="text-center">
+//             <img src="imagens/feijao.png" height="250px" width="250px">
+//         </div>
+//     </div>
+//     <div class="text-center">
+//     <h3 class="Text-center text-danger">Feijão Preto Kicaldo</h3>
+//     <h4 class="text-center text-success">R$4,99</h4>
+//     </div><br><br>
+
+
+
+//     <div class="row text-center">
+
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-success"><i class="mdi mdi-cart-plus mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-info"><i class="mdi mdi-information-outline mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-danger"><i class="mdi mdi-cart-remove mdi-36px"></i></a>
+//             </div>
+//     </div>
+//     `
+
+//         $('.modal-title').append('Produto pesquisado')
+//         $('.modal-body').append(body)
+
+//         $('#modalBunitinhu').modal('show')
+
+//     })
+//Macarrão
+// $('#btn-pesquisa').click(function(e) {
+//     e.preventDefault()
+//     $('.modal-title').empty()
+//     $('.modal-body').empty()
+
+//     let body = `
+
+//     <div class="img-fluid">
+//         <div class="text-center">
+//             <img src="imagens/macarrao.jpg" height="250px" width="250px">
+//         </div>
+//     </div>
+//     <div class="text-center">
+//     <h3 class="Text-center text-danger">Macarrão Galo Selmi</h3>
+//     <h4 class="text-center text-success">R$4,99</h4>
+//     </div><br><br>
+
+
+
+//     <div class="row text-center">
+
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-success"><i class="mdi mdi-cart-plus mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-info"><i class="mdi mdi-information-outline mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-danger"><i class="mdi mdi-cart-remove mdi-36px"></i></a>
+//             </div>
+//     </div>
+//     `
+
+//     $('.modal-title').append('Produto pesquisado')
+//     $('.modal-body').append(body)
+
+//     $('#modalBunitinhu').modal('show')
+
+// })
+
+
+
+
+
+
+
+
+
+
+// Quando não estiver nada digitado
+// $('#btn-pesquisa').click(function(e) {
+//         e.preventDefault()
+//         Swal.fire('Erro', 'Digite o produto desejado', 'error')
+//     })
+// Quando não tiver o produto no estoque
 
 // $('#btn-pesquisa').click(function(e) {
 //     e.preventDefault()
