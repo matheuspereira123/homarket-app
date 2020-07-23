@@ -1,4 +1,5 @@
-$('#btn-prom').click(function() {
+$('#btn-prom').click(function(e) {
+            e.preventDefault()
             $('#mdi').removeClass('mdi mdi-cart-plus mdi-24px')
             $('#mdi').addClass('mdi mdi-check mdi-24px')
             Swal.fire({
@@ -9,7 +10,8 @@ $('#btn-prom').click(function() {
                 timer: 1500
             })
 
-            $('#info1').click(function() {
+            $('#info1').click(function(e) {
+                e.preventDefault()
                 $('.modal-title').empty()
                 $('.modal-body').empty()
 
@@ -40,7 +42,8 @@ $('#btn-prom').click(function() {
 
                 $('#modalBunitinhu').modal('show')
 
-            }) $('#info2').click(function() {
+            }) $('#info2').click(function(e) {
+                e.preventDefault()
                 $('.modal-title').empty()
                 $('.modal-body').empty()
 
@@ -75,7 +78,8 @@ $('#btn-prom').click(function() {
                 $('#modalBunitinhu').modal('show')
             })
 
-            $('#info3').click(function() {
+            $('#info3').click(function(e) {
+                e.preventDefault()
                 $('.modal-title').empty()
                 $('.modal-body').empty()
 
