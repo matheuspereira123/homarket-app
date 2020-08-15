@@ -99,50 +99,50 @@ $('.atendimento-index').click(function(e) {
 
     })
     //Arroz
-$('#btn-pesquisa').click(function(e) {
-        e.preventDefault()
-        $('.modal-title').empty()
-        $('.modal-body').empty()
-
-        let body = `
-
-    <div class="img-fluid">
-        <div class="text-center">
-            <img src="imagens/arroz.jpg" height="250px" width="250px">
-        </div>
-    </div>
-    <div class="text-center">
-    <h3 class="Text-center text-danger">Arroz Branco camil</h3>
-    <h4 class="text-center text-success">R$4,99</h4>
-    </div><br><br>
-
-
-
-    <div class="row text-center">
-
-            <div class="col-md-4">
-                <a href="" class="btn btn-outline-success btn-sm"><i class="mdi mdi-cart-plus mdi-36px"></i></a>
-            </div>
-            <div class="col-md-4">
-                <a href="" class="btn btn-outline-info btn-sm"><i class="mdi mdi-information-outline mdi-36px"></i></a>
-            </div>
-            <div class="col-md-4">
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="mdi mdi-cart-remove mdi-36px"></i></a>
-            </div>
-    </div>
-    `
-
-        $('.modal-title').append('Produto pesquisado')
-        $('.modal-body').append(body)
-
-        $('#modalBunitinhu').modal('show')
-
-    })
-    //Feijão
     // $('#btn-pesquisa').click(function(e) {
     //         e.preventDefault()
     //         $('.modal-title').empty()
     //         $('.modal-body').empty()
+
+//         let body = `
+
+//     <div class="img-fluid">
+//         <div class="text-center">
+//             <img src="imagens/arroz.jpg" height="250px" width="250px">
+//         </div>
+//     </div>
+//     <div class="text-center">
+//     <h3 class="Text-center text-danger">Arroz Branco camil</h3>
+//     <h4 class="text-center text-success">R$4,99</h4>
+//     </div><br><br>
+
+
+
+//     <div class="row text-center">
+
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-success btn-sm"><i class="mdi mdi-cart-plus mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-info btn-sm"><i class="mdi mdi-information-outline mdi-36px"></i></a>
+//             </div>
+//             <div class="col-md-4">
+//                 <a href="" class="btn btn-outline-danger btn-sm"><i class="mdi mdi-cart-remove mdi-36px"></i></a>
+//             </div>
+//     </div>
+//     `
+
+//         $('.modal-title').append('Produto pesquisado')
+//         $('.modal-body').append(body)
+
+//         $('#modalBunitinhu').modal('show')
+
+//     })
+//Feijão
+// $('#btn-pesquisa').click(function(e) {
+//         e.preventDefault()
+//         $('.modal-title').empty()
+//         $('.modal-body').empty()
 
 //         let body = `
 
@@ -229,11 +229,11 @@ $('#btn-pesquisa').click(function(e) {
 
 
 // Quando não estiver nada digitado
-// $('#btn-pesquisa').click(function(e) {
-//         e.preventDefault()
-//         Swal.fire('Erro', 'Digite o produto desejado', 'error')
-//     })
-// Quando não tiver o produto no estoque
+$('#btn-pesquisa').click(function(e) {
+        e.preventDefault()
+        Swal.fire('Erro', 'Digite o produto desejado', 'error')
+    })
+    // Quando não tiver o produto no estoque
 
 // $('#btn-pesquisa').click(function(e) {
 //     e.preventDefault()
