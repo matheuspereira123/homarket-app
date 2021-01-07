@@ -1,21 +1,30 @@
-$('#btn-prom').click(function(e) {
-            e.preventDefault()
-            $('#mdi').removeClass('mdi mdi-cart-plus mdi-24px')
-            $('#mdi').addClass('mdi mdi-check mdi-24px')
-            Swal.fire({
-                icon: 'success',
-                title: 'sucesso',
-                text: 'Produto adicionado ao carrinho com sucesso',
-                showConfirmButton: false,
-                timer: 1500
-            })
+//sweet alert Não funcional 
 
-            $('#info1').click(function(e) {
-                e.preventDefault()
-                $('.modal-title').empty()
-                $('.modal-body').empty()
+// $('#btn-prom').click(function(e) {
+//             e.preventDefault()
+//             $('#mdi').removeClass('mdi mdi-cart-plus mdi-24px')
+//             $('#mdi').addClass('mdi mdi-check mdi-24px')
+//             Swal.fire({
+//                 icon: 'success',
+//                 title: 'sucesso',
+//                 text: 'Produto adicionado ao carrinho com sucesso',
+//                 showConfirmButton: false,
+//             })
 
-                let body = `
+//teste sweet alert 
+$('.btn-prom').click(function(e) {
+    e.preventDefault()
+    Swal.fire('Sucesso', 'Produto adicionado com sucesso', 'success')
+})
+
+//infos
+
+$('#info1').click(function(e) {
+    e.preventDefault()
+    $('.modal-title').empty()
+    $('.modal-body').empty()
+
+    let body = `
     <div class="row">
         <div class="col-md-6 col-12 text-center">
             <img src="imagens/Leite.jpg" width="400" height="400"><br>
@@ -37,17 +46,17 @@ $('#btn-prom').click(function(e) {
     </div>
     `
 
-                $('.modal-title').append('Informações do Produto Selecionado')
-                $('.modal-body').append(body)
+    $('.modal-title').append('Informações do Produto Selecionado')
+    $('.modal-body').append(body)
 
-                $('#modalBunitinhu').modal('show')
+    $('#modalBunitinhu').modal('show')
 
-            }) $('#info2').click(function(e) {
-                e.preventDefault()
-                $('.modal-title').empty()
-                $('.modal-body').empty()
+}) $('#info2').click(function(e) {
+    e.preventDefault()
+    $('.modal-title').empty()
+    $('.modal-body').empty()
 
-                let body = `
+    let body = `
     <div class="row">
         <div class="col-md-6 col-12 text-center">
         <img src="imagens/leite_condensado.png" width="400" height="400"><br>
@@ -72,18 +81,18 @@ $('#btn-prom').click(function(e) {
     
     `
 
-                $('.modal-title').append('Informações do Produto Selecionado')
-                $('.modal-body').append(body)
+    $('.modal-title').append('Informações do Produto Selecionado')
+    $('.modal-body').append(body)
 
-                $('#modalBunitinhu').modal('show')
-            })
+    $('#modalBunitinhu').modal('show')
+})
 
-            $('#info3').click(function(e) {
-                e.preventDefault()
-                $('.modal-title').empty()
-                $('.modal-body').empty()
+$('#info3').click(function(e) {
+    e.preventDefault()
+    $('.modal-title').empty()
+    $('.modal-body').empty()
 
-                let body = `
+    let body = `
     <div class="row">
         <div class="col-md-6 col-12 text-center">
         <img src="imagens/sucrilhos.png" width="400" height="400"><br>
@@ -108,8 +117,8 @@ $('#btn-prom').click(function(e) {
     
     `
 
-                $('.modal-title').append('Informações do Produto Selecionado')
-                $('.modal-body').append(body)
+    $('.modal-title').append('Informações do Produto Selecionado')
+    $('.modal-body').append(body)
 
-                $('#modalBunitinhu').modal('show')
-            })
+    $('#modalBunitinhu').modal('show')
+})
