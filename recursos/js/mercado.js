@@ -16,17 +16,13 @@ $('.atendimento-index').click(function(e) {
 
         let body = `
         <div class="row">
-        <div class="col-md-6 col-6 text-center">
+        <div class="col-md-12 col-12 text-center">
             <i class="mdi mdi-timetable mdi-36px text-center"></i>
             <p class="text-center">Horarios de atendimento</p>
         </div>
-        <div class="col-md-6 col-6 text-center">
-            <i class="mdi mdi-phone mdi-36px text-center"></i>
-            <p class="text-center">Fale conosco</p>
-        </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-6 text-center">
+        <div class="col-md-12 col-12 text-center">
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -83,13 +79,6 @@ $('.atendimento-index').click(function(e) {
                 </tbody>
             </table>
 
-        </div>
-        <div class="col-md-6 col-6 text-center">
-            <p>(14) 99847-3460</p>
-            <p>(14) 99847-3460</p><br>
-
-            <i class="mdi mdi-email mdi-36px"></i>
-            <p>Matheuspghc1@gmail.com</p>
         </div>
     </div>
         `
