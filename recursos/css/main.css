@@ -282,6 +282,13 @@ iframe {
     overflow: hidden;
 }
 
+.wrap-attlogin {
+    width: 650px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -309,12 +316,26 @@ iframe {
     border-bottom: 2px solid #d9d9d9;
 }
 
+.wrap-inputlogin {
+    width: 50%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+}
+
 .label-input100 {
     font-family: Poppins-Regular;
     font-size: 14px;
     color: #333333;
     line-height: 1.5;
     padding-left: 7px;
+}
+
+.label-inputlogin {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 50px;
 }
 
 .input100 {
