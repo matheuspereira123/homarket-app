@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ADD produtos</title>
+    <link rel="stylesheet" href="recursos/css/Matheus.css">
+    <link rel="stylesheet" href="recursos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="recursos/libs/MaterialDesign/css/materialdesignicons.css">
+    <link rel="stylesheet" href="recursos/css/addProd.css">
+    <link rel="stylesheet" href="recursos/css/lote.css">
+</head>
+
+<body class="bg-add">
+    <div class="row text-center">
+        <div class="offset-md-1 col-md-10 col-10 text-center"><br>
+            <a href="TLprod.html">
+                <h1 class="black"><i class="mdi mdi-cart-plus mdi-36px"></i></h1>
+            </a>
+            <br>
+        </div>
+    </div>
+    <br>
+    <div class="conteiner-fluid bg-table">
+        <div class="col-12 col-md-5 mx-auto shadow-lg p-3 mb-5 bg-white rounded text-center">
+            <p class="black"><i class="mdi mdi-clipboard-text mdi-48px"></i></p>
+            <form>
+                <div class="form-row text-center ">
+                    <div class="form-group col-md-6 col-6 text-center ">
+                        <label for="inputEmail4">
+                            Nome
+                        </label>
+                        <input type="email" class="form-control input-login" id="inputEmail4" placeholder="Informe o produto adicionado">
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label for="inputPassword4">
+                            Marca
+                        </label>
+                        <input type="text" class="form-control input-login" id="inputPassword4" placeholder="Informe a marca do produto">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">
+                        Preço
+                    </label>
+                    <input type="number" class="form-control input-login text-center" id="inputAddress" placeholder="Informe o valor do produto">
+                </div>
+                <div class="form-group ">
+                    <label for="inputAddress2">
+                        Quantidade
+                    </label>
+                    <input type="number" class="form-control input-login text-center" id="inputAddress2" placeholder="Informe quantas unidades serão adicionadas">
+                </div>
+                <br>
+                <a href="" id="btn-add" class="text-light btn btn-black add-prod">
+                    Cadastrar
+                </a>
+                <br>
+                <a href="TLprod.html">
+                    Voltar
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="recursos/js/jquery-3.5.1.min.js"></script>
+    <script src="recursos/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="recursos/js/prod.js"></script>
+</body>
+
+</html>
