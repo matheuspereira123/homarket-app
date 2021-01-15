@@ -18,60 +18,60 @@
     <div class="limiter">
         <div class="container-login100" style="background-image: url('');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" id="form-cadastro">
                     <span class="login100-form-title p-b-49">
 						Cadastro
 					</span>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Nome de usuário necessário">
                         <span class="label-input100">Nome de usuário</span>
-                        <input class="input100" type="text" name="username" placeholder="Digite seu nome de usuário">
+                        <input class="input100" type="text" name="nome" placeholder="Digite seu nome de usuário">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Idade necessária">
                         <span class="label-input100">Data de nascimento </span>
-                        <input class="input100" type="date" name="pass" placeholder="Digite sua idade ">
+                        <input class="input100" type="date" name="nascimento" placeholder="Digite sua idade ">
                         <span class="focus-input100" data-symbol="&#xf32e;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Endereço necessário">
                         <span class="label-input100">Endereço </span>
-                        <input class="input100" type="text" name="pass" placeholder="Digite seu endereço">
+                        <input class="input100 endereco" type="text" name="endereco" placeholder="Digite seu endereço">
                         <span class="focus-input100" data-symbol="&#xf175;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Telefone necessário">
                         <span class="label-input100">Celular </span>
-                        <input class="input100" type="tel" name="pass" placeholder="Digite seu Telefone  ">
+                        <input class="input100 celular" type="tel" name="celular" placeholder="Digite seu Telefone  ">
                         <span class="focus-input100" data-symbol="&#xf2c8;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="CEP necessário">
                         <span class="label-input100">CEP </span>
-                        <input class="input100" type="text" name="pass" placeholder="Digite seu CEP ">
+                        <input class="input100 cep" type="text" name="cep" placeholder="Digite seu CEP ">
                         <span class="focus-input100" data-symbol="&#xf173;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="RG necessário">
                         <span class="label-input100">RG </span>
-                        <input class="input100" type="text" name="pass" placeholder="Digite seu RG ">
+                        <input class="input100 rg" type="text" name="rg" placeholder="Digite seu RG ">
                         <span class="focus-input100" data-symbol="&#xf150;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="CPF necessário">
                         <span class="label-input100">CPF </span>
-                        <input class="input100" type="text" name="pass" placeholder="Digite seu CPF ">
+                        <input class="input100 cpf" type="text" name="cpf" placeholder="Digite seu CPF ">
                         <span class="focus-input100" data-symbol="&#xf150;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="E-mail necessário">
                         <span class="label-input100">E-mail</span>
-                        <input class="input100" type="email" name="pass" placeholder="Digite seu E-mail">
+                        <input class="input100" type="email" name="email" placeholder="Digite seu E-mail">
                         <span class="focus-input100" data-symbol="&#xf3fa;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Senha necessária">
                         <span class="label-input100">Senha </span>
-                        <input class="input100" type="password" name="pass" placeholder="Digite sua senha ">
+                        <input class="input100" type="password" name="senha" placeholder="Digite sua senha ">
                         <span class="focus-input100" data-symbol="&#xf183;"></span>
                     </div>
                     <div class="wrap-input100" data-validate="">
                         <span class="label-input100" for="customFile">Escolha uma foto de perfil</span>
-                        <input class="input100 foto-padding" type="file" name="pass" placeholder="" id="customFile">
+                        <input class="input100 foto-padding" type="file" name="foto" id="customFile">
                         <span class="focus-input100" data-symbol="&#xf225;"></span>
                     </div>
 
@@ -84,7 +84,7 @@
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
+                            <button class="login100-form-btn btn-cadastrar">
 								Conclúido
 							</button>
                         </div>
@@ -114,7 +114,9 @@
     <script src="recursos/js/jquery-3.5.1.min.js"></script>
     <script src="recursos/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="recursos/js/login.js"></script>
+    <script src="src/usuario/controller/cadastro.js"></script>
+    <script src="recursos/libs/jQuery Mask/jquery.mask.js"></script>
+    <script src="recursos/js/input.js"></script>
 
 </body>
 

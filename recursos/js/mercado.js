@@ -70,14 +70,7 @@ $('.atendimento-index').click(function(e) {
                         <td>01:00 ás 06:00 PM</td>
                     </tr>
                     <tr>
-                        <th scope="row">Sábado</th>
-                        <td>Manhã</td>
-                        <td>07:00 ás 11:30 AM</td>
-                        <td>Tarde</td>
-                        <td>01:00 ás 03:00 PM</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Domingo</th>
+                        <th scope="row">Sábado/Domingo</th>
                         <td>Manhã</td>
                         <td>07:00 ás 12:00 AM</td>
                         <td>Tarde</td>
