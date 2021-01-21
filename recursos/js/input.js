@@ -15,19 +15,6 @@
     })
 
     /*==================================================================
-    [btn]*/
-    window.addEventListener("load", function() {
-
-        $('.btn-log').click(function() {
-
-            $(location).attr('href', 'menu.html')
-
-        });
-
-    });
-
-
-    /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
 

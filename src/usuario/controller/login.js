@@ -1,23 +1,15 @@
 $(document).ready(function() {
-    $(".celular").mask('(99) 99999-9999')
-    $('.cep').mask('00000-000')
-    $(".rg").mask('99.999.999-9')
-    $(".cpf").mask('999.999.999-99')
-    $('.btn-cadastrar').click(function(e) {
+    $('.btn-login').click(function(e) {
 
         e.preventDefault()
 
-        let dados = new FormData(document.getElementById('form-cadastro'))
+        var dados = $("#form-login").serialize()
 
         $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: 'src/usuario/model/cadastro.php',
+            url: 'src/usuario/model/login.php',
             data: dados,
-            nimeType: 'multipart/form-data',
-            cache: false,
-            contentType: false,
-            processData: false,
             success: function(dados) {
                 if (dados.icone == 'success') {
                     $(".input100").val('')

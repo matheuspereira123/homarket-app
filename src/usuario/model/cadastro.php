@@ -82,7 +82,7 @@
 
             // Email
 
-                $email = $rqst['email'];
+                $email = trim($rqst['email']);
                 if(strpos($email, '@') === false){
 
                     $dados = array(
@@ -94,16 +94,15 @@
                 }
 
             // Senha
-                $senha = base64_encode($rqst['senha']);
+                $senha = base64_encode(trim($rqst['senha']));
 
-            if($erroFoto > 0){
+            if($erroFoto == 4){
 
                 $sql = "INSERT INTO clientes (nome, nascimento, endereco, celular, cep, rg, cpf, email, senha, foto) VALUES (" . '"' . $rqst['nome'] .'"' . ', ' . '"' . $rqst['nascimento'] . '"' . ', ' . '"' . $rqst['endereco'] . '"' . ', ' . $celular . ', ' . $cep . ', ' . $rg . ', ' . $cpf . ', ' . '"' . $email . '"' . ', ' . '"' . $senha . '"' . ', ' . '"recursos/img/user.svg"' .")";
 
                 $resultado = mysqli_query($conexao, $sql);
 
             } else {
-
                 $pasta = "foto/";
                 if(!file_exists('../' . $pasta)) mkdir('../' . $pasta, 0755);
                 $nomeTemporario = $foto['tmp_name']; 
@@ -114,6 +113,7 @@
 
                 if(move_uploaded_file($nomeTemporario, $destino)){
 
+                    $passou = 'sim';
                     if($extensao == "jpeg" || $extensao == "JPEG" || $extensao == "jpg" || $extensao == "JPG" || $extensao == "png" || $extensao == "PNG" ){
 
                         $sql = "INSERT INTO clientes (nome, nascimento, endereco, celular, cep, rg, cpf, email, senha, foto) VALUES (" . '"' . $rqst['nome'] .'"' . ', ' . '"' . $rqst['nascimento'] . '"' . ', ' . '"' . $rqst['endereco'] . '"' . ', ' . $celular . ', ' . $cep . ', ' . $rg . ', ' . $cpf . ', ' . '"' . $email . '"' . ', ' . '"' . $senha . '"' . ', ' . '"' . $destino . '"' .")";
@@ -124,7 +124,10 @@
     
                         $dados = array(
                             'msg' => 'Formato de arquivo não suportado',
-                            'icone' => 'error'
+                            'icone' => 'error',
+                            $sql,
+                            $erroFoto,
+                            $extensao
                         ); 
                         unlink($destino);
                         echo json_encode($dados, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
@@ -140,6 +143,21 @@
                     'msg' => 'Cliente cadastrado com êxito'
                 );
 
+                $session = "SELECT id_cliente, nome, DATE_FORMAT(nascimento, '%d/%m/%Y') as nascimento, endereco, celular, cep, rg, cpf, email, foto FROM clientes WHERE nome = ".'"'.$nome.'"'." AND senha = ".'"'.$senha.'"';
+                $resultado = mysqli_query($conexao, $session);
+
+                $informacoes = mysqli_fetch_assoc($resultado);
+
+                $_SESSION['nome'] = $rqst['nome'];
+                $_SESSION['nascimento'] = str_replace("-", "/", $rqst['nascimento']);
+                $_SESSION['endereco'] = $informacoes['endereco'];
+                $_SESSION['celular'] = $informacoes['celular'];
+                $_SESSION['cep'] = $informacoes['cep'];
+                $_SESSION['rg'] = $informacoes['rg'];
+                $_SESSION['cpf'] = $informacoes['cpf'];
+                $_SESSION['email'] = $informacoes['email'];
+                $_SESSION['foto'] = $foto;
+
             }else{
 
                 $dados = array(
@@ -154,8 +172,7 @@
 
         $dados = array(
             'msg' => "Erro 500" . "<br>" . "Ocorreu um erro interno no servidor 😕 ⚠️",
-            'icone' => 'error',
-            'host' => $host
+            'icone' => 'error'
         );
 
     }
