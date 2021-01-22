@@ -1,3 +1,12 @@
+<?php
+
+    session_start();
+
+    if(!isset($_SESSION['cpf'])){
+        header('Location: index.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,6 +16,7 @@
     <title>Layout do Mercado</title>
     <link rel="stylesheet" href="recursos/css/bootstrap.min.css">
     <link rel="stylesheet" href="recursos/css/Matheus.css">
+    <link rel="stylesheet" href="recursos/css/menu.css">
     <link rel="stylesheet" href="recursos/libs/MaterialDesign/css/materialdesignicons.css">
 
 </head>
@@ -22,7 +32,7 @@
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a id="orange" class="nav-link text-center ml-5" href="TLprod.html"><i class="mdi mdi-shopping mdi-36px"></i><p> Produtos</p></a>
+                    <a id="orange" class="nav-link text-center ml-5" href="TLprod.html"><i class="mdi mdi-shopping mdi-36px"></i><p>Produtos</p></a>
                 </li>
                 <li class="nav-item">
                     <a id="orange" class="nav-link text-center ml-5" href="#"><i class="mdi mdi-account-group mdi-36px"></i><p>Fornecedores</p></a>
@@ -43,8 +53,8 @@
                         Login
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a id="orange" class="dropdown-item active bg-light text-center" href="login.html"><i class="mdi mdi-exit-to-app mdi-24px"></i><p class="">Sair</p></a>
-                        <a id="orange" class="dropdown-item active bg-light text-center" href="#"><i class="mdi mdi-account-check-outline mdi-24px"></i><p class=""> Ver perfil</p></a>
+                        <a id="orange" class="dropdown-item active bg-light text-center btn-sair"><i class="mdi mdi-exit-to-app mdi-24px"></i><p class="">Sair</p></a>
+                        <a id="orange" class="dropdown-item active bg-light text-center" href="#"><i class="mdi mdi-account-check-outline mdi-24px"></i><p class="">Ver perfil</p></a>
                     </div>
                 </div>
             </div>
@@ -143,7 +153,7 @@
                     <h6 class="text-uppercase font-weight-bold text-white">Contato</h6>
                     <button type="button" class="efeito efeito-btn mb-4  mx-auto" style="width: 60px; height: 3px;"></button>
                     <p class="text-white">
-                        <i class="mdi mdi-email mdi-16px"></i> homarket.pmgda@gmail.com
+                        <i class="mdi mdi-email mdi-16px"></i>homarket.pmgda@gmail.com
                     </p>
                     <p class="text-white ">
                         <i class="mdi mdi-facebook-box mdi-16px"></i>Homarket
@@ -188,9 +198,8 @@
     <script src="recursos/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="recursos/js/mercado.js"></script>
+    <script src="src/usuario/controller/menu.js"></script>
 
 </body>
-
-</html>
 
 </html>

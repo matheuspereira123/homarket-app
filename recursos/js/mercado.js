@@ -8,7 +8,6 @@ $('#produtos').click(function() {
     $('#loader').hide()
 })
 
-
 $('.atendimento-index').click(function(e) {
         e.preventDefault()
         $('.modal-title').empty()

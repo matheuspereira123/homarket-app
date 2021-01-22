@@ -22,7 +22,7 @@ $(document).ready(function() {
                         confirmButtonText: 'Ok',
                     }).then((result) => {
                         if (result.value) {
-                            $(location).attr('href', 'menu.html')
+                            $(location).attr('href', 'menu.php')
                         }
                     })
                 } else {

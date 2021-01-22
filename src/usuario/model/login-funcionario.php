@@ -8,7 +8,7 @@
 
         $rqst = $_POST;
 
-        if($rqst['nome'] == ''){
+        if($rqst['nome'] == ""){
 
             $dados = array(
                 'msg' => "Preencha os campos vazios obrigatórios",
@@ -20,20 +20,20 @@
             $nome = trim($rqst['nome']);
             $senha = base64_encode(trim($rqst['senha']));
 
-            $sql = "SELECT nome FROM clientes WHERE nome = ".'"'.$nome.'"';
+            $sql = "SELECT nome FROM funcionarios WHERE nome = ".'"'.$nome.'"';
             $resultado = mysqli_query($conexao, $sql);
             $nomes = mysqli_num_rows($resultado);
 
             if($nomes > 0){
 
-                $sql = "SELECT id_cliente, nome, DATE_FORMAT(nascimento, '%d/%m/%Y') as nascimento, endereco, celular, cep, rg, cpf, email, foto FROM clientes WHERE nome = ".'"'.$nome.'"'." AND senha = ".'"'.$senha.'"';
+                $sql = "SELECT id_funcionario, nome, DATE_FORMAT(nascimento, '%d/%m/%Y') as nascimento, endereco, celular, cep, rg, cpf, email, foto FROM funcionarios WHERE nome = ".'"'.$nome.'"'." AND senha = ".'"'.$senha.'"';
                 $resultado = mysqli_query($conexao, $sql);
                 $usuarios = mysqli_num_rows($resultado);
 
                 if($usuarios > 0){
 
                     $dados = array(
-                        'msg' => "Usuário logado com sucesso",
+                        'msg' => "Funcionário logado com sucesso",
                         'icone' => 'success'
                     );
 
@@ -53,14 +53,15 @@
 
                     $dados = array(
                         'msg' => "Senha incorreta",
-                        'icone' => 'error'
+                        'icone' => 'error',
+                        $sql
                     );
                 }
 
             } else{
 
                 $dados = array(
-                    'msg' => "Usuário não cadastrado",
+                    'msg' => "Funcionário não cadastrado pelo ADM",
                     'icone' => 'error'
                 );
             }

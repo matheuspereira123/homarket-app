@@ -166,8 +166,8 @@
                 );
                 unlink($destino);
             }
-            mysqli_close($conexao);
         }
+        mysqli_close($conexao);
     } else {
 
         $dados = array(
