@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="flex-col-c p-t-155 mb-certa">
-                        <a href="login.html" class="txt2">
+                        <a href="index.php" class="txt2">
 							voltar
 						</a>
                     </div>

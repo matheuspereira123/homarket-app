@@ -60,7 +60,7 @@
                         <a href="cadastro.html" class="txt2">
 							Cadastre-se
                         </a><br>
-                        <a href="funcionario.html" class="txt2">
+                        <a href="funcionario.php" class="txt2">
 							Entrar como funcionário 
 						</a>
                     </div>
@@ -88,7 +88,7 @@
     <script src="recursos/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="recursos/js/input.js"></script>
-    <script src="src/usuario/controller/login.js"></script>
+    <script src="src/usuario/controller/login-cliente.js"></script>
 
 </body>
 

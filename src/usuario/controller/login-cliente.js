@@ -12,7 +12,6 @@ $(document).ready(function() {
             data: dados,
             success: function(dados) {
                 if (dados.icone == 'success') {
-                    $(".input100").val('')
                     Swal.fire({
                         icon: dados.icone,
                         html: '<h2 style="color:white;">' + dados.msg + '</h2>',
