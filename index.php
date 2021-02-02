@@ -57,7 +57,7 @@
                         <span class="txt1 p-b-17">
 							Faça seu cadastro
 						</span>
-                        <a href="cadastro.html" class="txt2">
+                        <a href="cadastro.php" class="txt2">
 							Cadastre-se
                         </a><br>
                         <a href="funcionario.php" class="txt2">

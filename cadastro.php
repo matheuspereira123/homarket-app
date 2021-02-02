@@ -1,3 +1,12 @@
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['cpf'])){
+        header('Location: menu.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
